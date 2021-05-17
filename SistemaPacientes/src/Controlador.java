@@ -15,6 +15,11 @@ public class Controlador {
 	public Controlador() {
 	}
 	
+	
+	/** 
+	 * Solicita el tipo para saber que PriorityQueue llenar
+	 * @param typeQueue
+	 */
 	public void readPatientList(int typeQueue) {
 		// TODO Auto-generated method stub
 
@@ -40,10 +45,20 @@ public class Controlador {
 		catch(java.io.IOException ioex) {}
 	}
 	
+	
+	/** 
+	 * Devuelve la lista por medio de PriorityQueue
+	 * @return PriorityQueue<Paciente>
+	 */
 	public PriorityQueue<Paciente> getPacientesPri(){
 		return pacientesPri;
 	}
 	
+	
+	/** 
+	 * Devuelve la lista por medio del VectorHeap.
+	 * @return VectorHeap<Paciente>
+	 */
 	public VectorHeap<Paciente> getPacientesVec(){
 		return pacientesVec;
 	}
